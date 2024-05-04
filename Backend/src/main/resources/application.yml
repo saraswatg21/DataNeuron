@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+
+
+  liquibase:
+    enabled: true
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+      #        format_sql: true
+#    show-sql : true
+
+
+
+
